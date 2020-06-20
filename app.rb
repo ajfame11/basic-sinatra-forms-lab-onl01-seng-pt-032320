@@ -11,6 +11,10 @@ class App < Sinatra::Base
     #raise params.inspect
     binding.pry
     @name = params[:name]
+    
+    @coach = params[:coach]
+    
+    
     erb :team
   end
   
