@@ -9,12 +9,20 @@ class App < Sinatra::Base
 
   post '/team' do
     #raise params.inspect
-    binding.pry
+    #binding.pry
     @name = params[:name]
-    
+
     @coach = params[:coach]
-    
-    
+
+    @pg = params[:pg]
+
+    @sg = params[:sg]
+
+    @sf = params[:sf]
+
+    @pf = params[:pf]
+
+    @c = params[:c]
     erb :team
   end
   
